@@ -22,10 +22,13 @@ const App = () => {
 
   // Reset tax values when the country is not australia, this depends on the requirement of the client
   // We can also reset categories on tax number check, this also depends on the requirement
-  const resetTaxValues = () => {
+  const resetTaxValues = (resetCheckbox = false) => {
     changeTaxCatValue("");
     changeTaxNumberValue("");
-    taxNumberCheckHandler(false);
+    
+    if (resetCheckbox) {
+      taxNumberCheckHandler(false);
+    }
   };
 
   const formElementsArray = [
@@ -97,6 +100,7 @@ const App = () => {
               myTaxNumber={taxNumber}
               changeTaxNumberValue={changeTaxNumberValue}
               changeTaxCatValue={changeTaxCatValue}
+              resetTaxValues={resetTaxValues}
             />
           </div>
         )}

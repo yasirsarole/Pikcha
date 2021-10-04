@@ -7,6 +7,7 @@ const  TaxNumber = props => {
     myTaxNumber,
     changeTaxNumberValue,
     changeTaxCatValue,
+    resetTaxValues
   } = props;
 
   const categoriesArray = [
@@ -25,6 +26,7 @@ const  TaxNumber = props => {
             checked={value}
             onChange={() => {
               changeHandler(!value);
+              resetTaxValues();
             }}
           />
           Do you have a tax number?

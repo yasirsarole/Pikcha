@@ -11,7 +11,7 @@ const  CountryOptions = props => {
       options={options}
       value={props.value}
       onChange={(value) => {changeHandler(value); if (value !== 'Australia') {
-        resetTaxValues();
+        resetTaxValues(true);
       }}}
     />
   );
