@@ -5,6 +5,9 @@ import CountrySelector from './components/countrySelect';
 import TaxNumber from './components/taxNumber';
 import InputText from './components/childComponents/inputText';
 
+// import css
+import './App.css'
+
 const App = () => {
   const [address1, changeAddressValue] = useState("");
   const [city, changeCityValue] = useState("");
@@ -50,6 +53,7 @@ const App = () => {
   ];
 
   // log value everytime the form value changes
+  // residential address is the sum of address1 and line2
   console.log("Fetch Data", {
     address1,
     city,

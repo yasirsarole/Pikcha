@@ -18,16 +18,18 @@ const  TaxNumber = props => {
 
   return (
     <div className="taxNumberContainer">
-      <label>
-        <input
-          type="checkbox"
-          checked={value}
-          onChange={() => {
-            changeHandler(!value);
-          }}
-        />
-        Do you have a tax number?
-      </label>
+      <div className="formElement">
+        <label>
+          <input
+            type="checkbox"
+            checked={value}
+            onChange={() => {
+              changeHandler(!value);
+            }}
+          />
+          Do you have a tax number?
+        </label>
+      </div>
       {value && (
         <div className="myTaxNumber">
           <span>My Tax Number:</span>

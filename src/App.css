@@ -1,0 +1,30 @@
+body {
+  font-family: 'Circular-Loom', sans-serif;
+}
+
+.contantForm {
+  margin: 20px;
+}
+.formElement {
+  margin-bottom: 10px;
+}
+.formElement input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  padding-right: 0;
+  margin-top: 5px;
+  background: lightgrey;
+  border: transparent;
+  border-radius: 3px;
+}
+
+.exemptionCategories label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.exemptionCategories span {
+  display: inline-block;
+  margin-bottom: 5px;
+}
